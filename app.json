@@ -23,6 +23,10 @@
         "APP_ID": {
             "description": "Your API ID from my.telegram.org",
             "value": ""
+        },
+        "DEV": {
+            "description": "put your user without @",
+            "value": ""
         }
     },
     "addons": [],
