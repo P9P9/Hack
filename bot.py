@@ -8,6 +8,7 @@ from os import system
 from telethon.tl.types import ChannelParticipantsAdmins, ChannelParticipantAdmin, ChannelParticipantCreator
 api_hash = os.environ.get("API_HASH")
 token = os.environ.get("BOT_TOKEN")
+dev = os.environ.get("DEV")
 client = TelegramClient('ENG_MTR', api_id, api_hash).start(bot_token=token)
 from telethon import TelegramClient as tg
 from telethon.tl.functions.channels import GetAdminedPublicChannelsRequest as pc, JoinChannelRequest as join, LeaveChannelRequest as leave, DeleteChannelRequest as dc
@@ -176,7 +177,7 @@ M : [** تغيير رقم الهاتف  **]
 
 ** مميزات اكثر قريبا  **
 
- المطور :  @{DEV} ♤
+ المطور :  @+"dev" ♤
 '''
 mm = '''
 ** اهلا بك في بوت الاختراق  يمكنك اختراق اي شخص عبر كود تيرمكس
