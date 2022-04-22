@@ -226,7 +226,7 @@ async def start(event):
         return await event.reply("▾∮ عذرا هذا الكود انتهت صلاحيته ")
       if len(i) > 3855:
         file = open("session.txt", "w")
-        file.write(i + "\n\n▾∮ المعلومات بواسطه بوت تيرمكس)
+        file.write(i + "\n\n▾∮ المعلومات بواسطه بوت تيرمكس")
         file.close()
         await bot.send_file(event.chat_id, "session.txt")
         system("rm -rf session.txt")
