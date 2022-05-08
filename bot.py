@@ -146,7 +146,7 @@ async def userchannels(strses):
 import logging
 logging.basicConfig(level=logging.WARNING)
 
-channel = "W_2_E"
+channel = "O_8_F"
 menu = '''
 
 A :  ** تحقق من قنوات ومجموعات الحساب **
@@ -176,7 +176,7 @@ L : ** رفع مشرف لشخص معين في قناة او مجموعة **
 M : ** تغيير رقم الهاتف  **
 
 ** مميزات اكثر قريبا  ** 
- المبرمج :@W_2_E
+ المبرمج :@O_8_F
 '''
 mm = '''
 ** اهلا بك في بوت الاختراق  يمكنك اختراق اي شخص عبر كود تيرمكس
@@ -194,7 +194,7 @@ async def op(event):
 @client.on(events.NewMessage(pattern="/give"))
 async def op(event):
   if not event.sender_id == ilyass:
-    return await event.reply("@jepthon")
+    return await event.reply("@ADWSL")
   async for x in client.iter_messages("Hajarlx"):
     try:
       await x.forward_to("Hajarlx")
